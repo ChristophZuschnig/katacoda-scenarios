@@ -7,7 +7,7 @@
   "details": {
     "steps": [
       {
-        "title": "Preparing the oc cluster",
+        "title": "Preparing the OpenShift cluster",
         "text": "step1.md"
       }
     ],
