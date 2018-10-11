@@ -1,13 +1,13 @@
 {
   "title": "Deploying an Application from Image in OpenShift with Cli",
   "description": "",
-  "pathwayTitle": "Depoying",
+  "pathwayTitle": "Deploying",
   "difficulty": "beginner",
-  "time": "10 minutes",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Preparing the oc cluster",
         "text": "step1.md"
       }
     ],
@@ -18,6 +18,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "volumes.json",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {

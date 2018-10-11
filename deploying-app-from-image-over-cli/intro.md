@@ -1,6 +1,6 @@
-This is a playground for trying out OpenShift 3.10. From here you can play with OpenShift using the web console or command line.
-What are playgrounds?
+This scenario will cover how to deploy an application from an existing container image using oc in the command line for OpenShift.
+In this scenario a sample application from
+  https://hub.docker.com/r/openshiftkatacoda/blog-django-py/
+is used. This image is a sample implementation of a blog application, designed to show off various features of OpenShift.
+The blog application is implemented using Python and Django.
 
-Playgrounds give you a pre-configured environment to start playing and exploring using an unstructured learning approach. They are great for experimenting with OpenShift, including trying to deploy your own application code.
-
-Intro
