@@ -1,2 +1,5 @@
 # katacoda-scenarios
-http://www.katacoda.com/czu
+
+Interactive openshift szenarios
+
+samples http://www.katacoda.com/czu
