@@ -1,0 +1,34 @@
+{
+  "title": "Deploying Applications from Images in OpenShift with Web Console",
+  "description": "Deploy an application from an existing container image",
+  "pathwayTitle": "OpenShift",
+  "difficulty": "beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "courseData": "env-init.sh",
+      "code": "set-env.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboard": "Dashboard",
+    "uilayout": "terminal",
+    "hideintro": false,
+    "hidefinish": false
+  },
+  "backend": {
+    "imageid": "openshift-3-10",
+    "port": 8443
+  }
+}
