@@ -1,9 +1,9 @@
 {
-  "title": "Deploying Applications from Images in OpenShift with Web Console",
-  "description": "Deploy an application from an existing container image",
-  "pathwayTitle": "OpenShift",
+  "title": "Deploying an Application from Images in OpenShift with Web Console",
+  "description": "",
+  "pathwayTitle": "iDeploying",
   "difficulty": "beginner",
-  "time": "60 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {

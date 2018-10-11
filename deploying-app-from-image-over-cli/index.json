@@ -1,7 +1,7 @@
 {
-  "title": "Deploying an Applications from Image in OpenShift with Cli",
-  "description": "Deploy an application from an existing container image",
-  "pathwayTitle": "OpenShift",
+  "title": "Deploying an Application from Image in OpenShift with Cli",
+  "description": "",
+  "pathwayTitle": "Depoying",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {
