@@ -1,7 +1,6 @@
 Todo: Describe Scenario
 `oc get images --as system:admin | grep blog-django-py`{{execute}}
-*mandatory*
-`oc import-image sample:latest --from=openshiftkatacoda/blog-django-py --confirm`{{execute}}
+*mandatory*`oc import-image sample:latest --from=openshiftkatacoda/blog-django-py --confirm`{{execute}}
 `oc get images --as system:admin | grep blog-django-py`{{execute}}
 
 # How do I get information about Image Streams?
