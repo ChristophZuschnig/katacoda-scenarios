@@ -34,7 +34,7 @@ Persistent volumes have been pre-created in the scenario environment. These will
 
 To view the list of available persistent volumes you can run:
 
-`oc get pv --as system:admini`{{execute}}
+`oc get pv --as system:admin`{{execute}}
 
 # Builder Images and Templates
 
