@@ -1,1 +1,1 @@
-oc import-image sample:latest --from=openshiftkatacoda/blog-django-py --confirm
+`oc import-image sample:latest --from=openshiftkatacoda/blog-django-py --confirm`{{execute}}
