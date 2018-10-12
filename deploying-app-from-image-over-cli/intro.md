@@ -8,3 +8,5 @@ The blog application is implemented using Python and Django.
 
 Attention:
 You can executed the oc statements by clicking on the statement in the step description. Steps marked as mandatory has to be excuted to fullfill the scenario.
+
+Hint: You can use the OpenShift Cluster as playground for OpenShift as well. There is no need to follow the steps.

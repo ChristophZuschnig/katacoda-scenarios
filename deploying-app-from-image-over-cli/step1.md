@@ -1,3 +1,5 @@
+Objective of this step:
+Create a project myproject under the user developer for futher use in the szenario.
 
 When the OpenShift environment is created you will be logged in initially as a cluster admin on the command line. This will allow you to perform operations which would normally be performed by a cluster admin.
 
