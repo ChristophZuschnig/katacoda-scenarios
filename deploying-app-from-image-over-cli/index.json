@@ -1,5 +1,5 @@
 {
-  "title": "Deploying an Application from Image in OpenShift with Cli",
+  "title": "Deploying an Application from an external Image in OpenShift with Cli",
   "description": "",
   "pathwayTitle": "Deploying",
   "difficulty": "beginner",
