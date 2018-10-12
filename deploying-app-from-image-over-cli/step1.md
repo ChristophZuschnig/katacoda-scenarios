@@ -12,7 +12,7 @@ This will log you in using the credentials:
     Username: developer
     Password: developer
 
-Use the same credentials to log into the web console.
+Use the same credentials to log into the web console via the Dashboard.
 
 In order that you can still run commands from the command line as a cluster admin, the sudoer role has been enabled for the developer account. To execute a command as a cluster admin use the --as system:admin option to the command. For example:
 
@@ -22,7 +22,7 @@ In order that you can still run commands from the command line as a cluster admi
 
 To create a new project called myproject run the command:
 
-`oc new-project myprojecti`{{execute}}
+`oc new-project myproject`{{execute}}
 
 You could instead create the project from the web console. If you do this, to change to the project from the command line run the command:
 
