@@ -5,7 +5,7 @@ Before creating any applications, it is recommended you login as a distinct user
 
 To login to the OpenShift cluster from the Terminal run:
 
-*mandatory*`oc login -u developer -p developer [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+`oc login -u developer -p developer [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}} *mandatory*
 
 This will log you in using the credentials:
 
@@ -22,7 +22,7 @@ In order that you can still run commands from the command line as a cluster admi
 
 To create a new project called myproject run the command:
 
-*mandatory*`oc new-project myprojecti`{{execute}}
+`oc new-project myprojecti`{{execute}} *mandatory*
 
 You could instead create the project from the web console. If you do this, to change to the project from the command line run the command:
 

@@ -1,6 +1,26 @@
-Todo: Describe Scenario
+
+First we want to verify that in the OpenShift Cluster no demo sample image is available:
+
 `oc get images --as system:admin | grep blog-django-py`{{execute}}
-*mandatory*`oc import-image sample:latest --from=openshiftkatacoda/blog-django-py --confirm`{{execute}}
+
+# How do I create an Image Stream from an existing image?
+To create a new Image Stream named “sample” from an external Docker Registry with a single tag pointing to latest,
+one needs to invoke following command:
+
+`oc import-image sample:latest --from=openshiftkatacoda/blog-django-py --confirm`{{execute}} *mandatory*
+
+Let us break this command into pieces:
+
+sample:latest – sample is the new Image Stream that will be created as a result of this invocation. Additionally we are explicitly pointing that the imported image will be kept under the latest - Image Stream Tag of that Image Stream.
+
+--from=openshiftkatacoda/blog-django-py – states what external image the Image Stream Tag will point to.
+
+--confirm – informs the system that the python Image Stream should be created, if this is omitted and there is no python Image Stream, you will be presented with an error message.
+
+At any point in time if you want to re-import the Image Stream, either entirely or just a single tag, use oc import-image and pass the name of the entire Image Stream or just a particular Image Stream Tag (like python:3.5 in the above example).
+
+Now we want to verify that the sample application image is available:
+
 `oc get images --as system:admin | grep blog-django-py`{{execute}}
 
 # How do I get information about Image Streams?

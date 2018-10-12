@@ -11,7 +11,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Verifying that the used image is not in the oc cluster",
+        "title": "Import the sample image into OpenShift Cluster",
         "text": "step2.md"
       }
     ],
