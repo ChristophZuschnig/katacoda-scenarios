@@ -22,7 +22,7 @@ In order that you can still run commands from the command line as a cluster admi
 
 To create a new project called myproject run the command:
 
-`oc new-project myprojecti`{{execute}} *mandatory*
+`oc new-project myproject`{{execute}} *mandatory*
 
 You could instead create the project from the web console. If you do this, to change to the project from the command line run the command:
 
@@ -34,7 +34,7 @@ Persistent volumes have been pre-created in the scenario environment. These will
 
 To view the list of available persistent volumes you can run:
 
-`oc get pv --as system:admini`{{execute}}
+`oc get pv --as system:admin`{{execute}}
 
 # Builder Images and Templates
 
