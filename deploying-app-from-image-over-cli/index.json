@@ -9,6 +9,10 @@
       {
         "title": "Preparing the OpenShift cluster",
         "text": "step1.md"
+      },
+      {
+        "title": "Verifying that the used image is not in the oc cluster",
+        "text": "step2.md"
       }
     ],
     "intro": {
