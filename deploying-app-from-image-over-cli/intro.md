@@ -6,3 +6,5 @@ This image is a sample implementation of a blog application, designed to show of
 
 The blog application is implemented using Python and Django.
 
+Attention:
+You can executed the oc statements by clicking on the statement in the step description. Steps marked as mandatory has to be excuted to fullfill the scenario.

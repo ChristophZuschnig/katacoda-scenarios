@@ -1,10 +1,11 @@
 Todo: Describe Scenario
 `oc get images --as system:admin | grep blog-django-py`{{execute}}
+*mandatory*
 `oc import-image sample:latest --from=openshiftkatacoda/blog-django-py --confirm`{{execute}}
 `oc get images --as system:admin | grep blog-django-py`{{execute}}
 
 # How do I get information about Image Streams?
-oc describe is the universal way of getting a user-readable information about any object in the OpenShift cluster. This will give you general information about the Image Stream and detailed information about all the tags it is pointing to. In our example from the previous question we would invoke:
+oc describe: is the universal way of getting a user-readable information about any object in the OpenShift cluster. This will give you general information about the Image Stream and detailed information about all the tags it is pointing to. In our example from the previous question we would invoke:
 `oc describe is/sample`{{execute}}
 to get all the information available about entire Image Stream,
 `oc describe istag/sample:latest`{{execute}}

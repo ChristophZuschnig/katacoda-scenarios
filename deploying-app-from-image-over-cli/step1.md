@@ -4,7 +4,7 @@ When the OpenShift environment is created you will be logged in initially as a c
 Before creating any applications, it is recommended you login as a distinct user. This will be required if you want to log in to the web console and use it.
 
 To login to the OpenShift cluster from the Terminal run:
-
+*mandatory*
 `oc login -u developer -p developer [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 This will log you in using the credentials:
@@ -12,7 +12,7 @@ This will log you in using the credentials:
     Username: developer
     Password: developer
 
-Use the same credentials to log into the web console via the Dashboard.
+Use the same credentials to log into the web console.
 
 In order that you can still run commands from the command line as a cluster admin, the sudoer role has been enabled for the developer account. To execute a command as a cluster admin use the --as system:admin option to the command. For example:
 
@@ -21,8 +21,8 @@ In order that you can still run commands from the command line as a cluster admi
 # Creating your own Project
 
 To create a new project called myproject run the command:
-
-`oc new-project myproject`{{execute}}
+*mandatory*
+`oc new-project myprojecti`{{execute}}
 
 You could instead create the project from the web console. If you do this, to change to the project from the command line run the command:
 
@@ -34,7 +34,7 @@ Persistent volumes have been pre-created in the scenario environment. These will
 
 To view the list of available persistent volumes you can run:
 
-`oc get pv --as system:admin`{{execute}}
+`oc get pv --as system:admini`{{execute}}
 
 # Builder Images and Templates
 
