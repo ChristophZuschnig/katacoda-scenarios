@@ -11,8 +11,12 @@
         "text": "step1.md"
       },
       {
-        "title": "Import the sample image into OpenShift Cluster",
+        "title": "Import the sample image as an Image Stream in the OpenShift Cluster",
         "text": "step2.md"
+      },
+      {
+        "title": "Creating an application from the Image Stream",
+        "text": "step3.md"
       }
     ],
     "intro": {

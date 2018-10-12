@@ -1,3 +1,5 @@
+# Objective of this step
+Import the external sample application image to an Image Stream called sample.
 
 First we want to verify that in the OpenShift Cluster no demo sample image is available:
 
