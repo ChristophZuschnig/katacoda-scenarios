@@ -3,13 +3,15 @@
 
 Import the external sample application image to an Image Stream called sample.
 
+# Step Two
+
 First we want to verify that in the OpenShift Cluster no demo sample image is available:
 
 `oc get images --as system:admin | grep blog-django-py`{{execute}}
 
-After running the command nothing is displayed.
+After running the command no image of type blog-django-py is displayed.
 
-# How do I create an Image Stream from an existing image?
+# How do I create an Image Stream from an existing image
 
 To create a new Image Stream named “sample” from an external Docker Registry with a single tag pointing to latest,
 one needs to invoke following command:
