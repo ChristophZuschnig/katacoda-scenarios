@@ -17,6 +17,10 @@
       {
         "title": "Creating an application from the Image Stream",
         "text": "step3.md"
+      },
+      {
+        "title": "Customising appearance of the the sample",
+        "text": "step4.md"
       }
     ],
     "intro": {

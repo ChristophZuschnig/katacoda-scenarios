@@ -26,6 +26,11 @@ As with deploying an existing container image from the web console, it’s not e
 
 Switch to the OpenShift web console to verify that the application has been deployed. Click on the URL displayed on the Overview page for the project to visit the application.
 
+This will log you in using the credentials:
+
+    Username: developer
+    Password: developer
+
 Alternatively, to view the hostname assigned to the route created from the command line, you can run this command:
 
 `oc get route/sample`{{execute}}
