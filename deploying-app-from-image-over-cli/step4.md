@@ -42,5 +42,5 @@ Even if a config map is used, environment variables, if defined for the same set
 
 `oc set env dc/sample BLOG_SITE_NAME-`{{execute}}
 
-so the value of the ConfigMap will taken.
+so now the value of the ConfigMap will taken.
 
