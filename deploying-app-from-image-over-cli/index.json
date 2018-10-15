@@ -21,6 +21,10 @@
       {
         "title": "Customising appearance of the the sample",
         "text": "step4.md"
+      },
+      {
+        "title": "Adding a Persitence Database",
+        "text": "step5.md"
       }
     ],
     "intro": {
