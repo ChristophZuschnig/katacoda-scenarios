@@ -1,4 +1,6 @@
+
 # Objective of this step
+
 Import the external sample application image to an Image Stream called sample.
 
 First we want to verify that in the OpenShift Cluster no demo sample image is available:
@@ -8,6 +10,7 @@ First we want to verify that in the OpenShift Cluster no demo sample image is av
 After running the command nothing is displayed.
 
 # How do I create an Image Stream from an existing image?
+
 To create a new Image Stream named “sample” from an external Docker Registry with a single tag pointing to latest,
 one needs to invoke following command:
 
@@ -29,7 +32,8 @@ Now we want to verify that the sample application image is available:
 
 After running the command the image is displayed.
 
-# How do I get information about Image Streams?
+# How do I get information about Image Streams
+
 oc describe: is the universal way of getting a user-readable information about any object in the OpenShift cluster. This will give you general information about the Image Stream and detailed information about all the tags it is pointing to. In our example from the previous question we would invoke:
 
 `oc describe is/sample`{{execute}}
@@ -40,7 +44,8 @@ to get all the information available about entire Image Stream,
 
 to get all the information available about particular Image Stream Tag.
 
-# How do I add more tags to the current Image Stream?
+# How do I add more tags to the current Image Stream
+
 To add a latest tag that points to one of the existing tags, you can use the oc tag command:
 
 `oc tag sample:latest sample:test`{{execute}}
@@ -49,7 +54,8 @@ Examining the sample ImageStream with oc describe should assure us that we have 
 
 `oc describe is/sample`{{execute}}
 
-# How do I remove a tag from an Image Stream?
+# How do I remove a tag from an Image Stream
+
 Eventually, you will want to remove old tags from your Image Stream, and yet again we are going to use oc tag for that particular use case:
 
 `oc tag -d sample:test`{{execute}}

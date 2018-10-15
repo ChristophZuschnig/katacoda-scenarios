@@ -1,9 +1,16 @@
+
 # Objective of this step
+
 Create a project myproject under the user developer for futher use in the szenario.
 
 When the OpenShift environment is created you will be logged in initially as a cluster admin on the command line. This will allow you to perform operations which would normally be performed by a cluster admin.
 
+See the current user in the OpenShift Cluster:
+
+`oc whoami`{{execute}}
+
 Before creating any applications, it is recommended you login as a distinct user. This will be required if you want to log in to the web console and use it.
+Check
 
 To login to the OpenShift cluster from the Terminal run:
 
@@ -16,11 +23,20 @@ This will log you in using the credentials:
 
 Use the same credentials to log into the web console.
 
+Now your have changed to the User developer:
+
+`oc whoami`{{execute}}
+
 In order that you can still run commands from the command line as a cluster admin, the sudoer role has been enabled for the developer account. To execute a command as a cluster admin use the --as system:admin option to the command. For example:
 
 `oc get projects --as system:admin`{{execute}}
 
+In contrats the developer user has no resources defined yet:
+
+`oc get projects`{{execute}}
+
 # Creating your own Project
+
 To create a new project called myproject run the command:
 
 `oc new-project myproject`{{execute}} *mandatory*
@@ -30,6 +46,7 @@ You could instead create the project from the web console. If you do this, to ch
 `oc project myproject`{{execute}}
 
 # Persistent Volume Claims
+
 Persistent volumes have been pre-created in the scenario environment. These will be used if you make persistent volume claims for an application. The volume sizes are defined as 100Gi each, however you are limited by how much disk space the host running the OpenShift environment has, which is much less.
 
 To view the list of available persistent volumes you can run:
@@ -37,6 +54,7 @@ To view the list of available persistent volumes you can run:
 `oc get pv --as system:admin`{{execute}}
 
 # Builder Images and Templates
+
 The scenario environment is pre-loaded with Source-to-Image (S2I) builders for Java (Wildfly), Javascript (Node.JS), Perl, PHP, Python and Ruby. Templates are also available for MariaDB, MongoDB, MySQL, PostgreSQL and Redis.
 
 You can see the list of what is available, and what versions, under Add to Project in the web console, or by running from the command line:
@@ -44,6 +62,7 @@ You can see the list of what is available, and what versions, under Add to Proje
 `oc new-app -L`{{execute}}
 
 # Running Images as a Defined User
+
 By default OpenShift prohibits images from running as the root user or as a specified user. Instead, each project is assigned its own unique range of user IDs that application images have to run as.
 
 If you attempt to run an arbitrary image from an external image registry such a Docker Hub, which is not built to best practices, or requires that it be run as root, it may not work as a result.
