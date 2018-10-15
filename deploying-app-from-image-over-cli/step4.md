@@ -12,7 +12,8 @@ To make it easy to demonstrate green/blue or a/b deployments, it is possible to 
 To set environment variables from the command line, you can run:
 
 `oc set env dc/sample BLOG_BANNER_COLOR=blue`{{execute}}
-`oc set env dc/sample BLOG_SITE_NAME=BLOG Sample Blog`{{execute}}
+
+`oc set env dc/sample BLOG_SITE_NAME='BLOG Sample Blog'`{{execute}}
 
 Under the title on each page, the host name for the pod handling the request is also shown if disabling sticky sessions on routing, or using curl to show how requests or different users are automatically load balanced across instances when scaled up.
 
@@ -31,7 +32,7 @@ The config map should be defined as a JSON data file. For example, a blog.json f
 
 The config map can be created using the command:
 
-`oc create configmap blog-settings --from-file=blog.json`{{execute}}
+`oc create configmap blog-settings --from-file=assets/blog.json`{{execute}}
 
 and then mounted into the container using:
 
