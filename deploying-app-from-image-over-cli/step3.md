@@ -1,5 +1,3 @@
-
-
 # Objective of this step
 
 After importing the sample image openshiftkatacoda/blog-django-py to an Image Stream named *sample*, we will create an application with this image.
@@ -23,3 +21,11 @@ OpenShift will assign a default name based on the name of the image, in this cas
 As with deploying an existing container image from the web console, it’s not exposed outside of the OpenShift cluster by default. To expose the application created so it’s available outside of the OpenShift cluster, you can run this command:
 
 `oc expose service/sample`{{execute}} *mandatory*
+
+## Visit the sample application
+
+Switch to the OpenShift web console to verify that the application has been deployed. Click on the URL displayed on the Overview page for the project to visit the application.
+
+Alternatively, to view the hostname assigned to the route created from the command line, you can run this command:
+
+`oc get route/sample`{{execute}}

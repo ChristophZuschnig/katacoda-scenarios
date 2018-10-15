@@ -1,5 +1,3 @@
-
-
 # Objective of this step
 
 Import the external sample application image to an Image Stream called sample.

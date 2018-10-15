@@ -1,5 +1,3 @@
-
-
 # Objective of this step
 
 Create a project myproject under the user developer for futher use in the szenario.
