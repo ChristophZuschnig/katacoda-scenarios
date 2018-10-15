@@ -1,9 +1,10 @@
 
+
 # Objective of this step
 
 Create a project myproject under the user developer for futher use in the szenario.
 
-# Step One
+## Step One
 
 When the OpenShift environment is created you will be logged in initially as a cluster admin on the command line. This will allow you to perform operations which would normally be performed by a cluster admin.
 
@@ -37,7 +38,7 @@ In contrats the developer user has no resources defined yet:
 
 `oc get projects`{{execute}}
 
-# Creating your own Project
+## Creating your own Project
 
 To create a new project called myproject run the command:
 
@@ -47,7 +48,7 @@ You could instead create the project from the web console. If you do this, to ch
 
 `oc project myproject`{{execute}}
 
-# Persistent Volume Claims
+## Persistent Volume Claims
 
 Persistent volumes have been pre-created in the scenario environment. These will be used if you make persistent volume claims for an application. The volume sizes are defined as 100Gi each, however you are limited by how much disk space the host running the OpenShift environment has, which is much less.
 
@@ -55,7 +56,7 @@ To view the list of available persistent volumes you can run:
 
 `oc get pv --as system:admin`{{execute}}
 
-# Builder Images and Templates
+## Builder Images and Templates
 
 The scenario environment is pre-loaded with Source-to-Image (S2I) builders for Java (Wildfly), Javascript (Node.JS), Perl, PHP, Python and Ruby. Templates are also available for MariaDB, MongoDB, MySQL, PostgreSQL and Redis.
 
@@ -63,7 +64,7 @@ You can see the list of what is available, and what versions, under Add to Proje
 
 `oc new-app -L`{{execute}}
 
-# Running Images as a Defined User
+## Running Images as a Defined User
 
 By default OpenShift prohibits images from running as the root user or as a specified user. Instead, each project is assigned its own unique range of user IDs that application images have to run as.
 
