@@ -38,9 +38,9 @@ and then mounted into the container using:
 
 `oc set volume dc/sample --add --name settings --mount-path /opt/app-root/src/settings --configmap-name blog-settings -t configmap`{{execute}}
 
-Even if a config map is used, environment variables, if defined for the same settings, will take precedence. We will unset the environment variable BLOG_SITE_NAME
+Even if a config map is used, environment variables, if defined for the same settings, will take precedence. We will unset the environment variable BLOG_BANNER_COLOR
 
-`oc set env dc/sample BLOG_SITE_NAME-`{{execute}}
+`oc set env dc/sample BLOG_BANNER_COLOR-`{{execute}}
 
 so now the value of the ConfigMap will taken.
 
