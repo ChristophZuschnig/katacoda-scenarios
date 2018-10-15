@@ -32,10 +32,15 @@ The config map should be defined as a JSON data file. For example, a blog.json f
 
 The config map can be created using the command:
 
-`oc create configmap blog-settings --from-file=assets/blog.json`{{execute}}
+`oc create configmap blog-settings --from-file=blog.json`{{execute}}
 
 and then mounted into the container using:
 
-`oc set volume dc/blog --add --name settings --mount-path /opt/app-root/src/settings --configmap-name blog-settings -t configmap`{{execute}}
+`oc set volume dc/sample --add --name settings --mount-path /opt/app-root/src/settings --configmap-name blog-settings -t configmap`{{execute}}
 
-Even if a config map is used, environment variables, if defined for the same settings, will take precedence.
+Even if a config map is used, environment variables, if defined for the same settings, will take precedence. We will unset the environment variable BLOG_SITE_NAME
+
+`oc set env dc/sample BLOG_SITE_NAME-`{{execute}}
+
+so the value of the ConfigMap will taken.
+
